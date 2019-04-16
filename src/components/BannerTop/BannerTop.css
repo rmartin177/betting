@@ -1,0 +1,19 @@
+/*
+ * BannerTop css File
+*/
+
+.BannerTop {
+    height: 100px;
+    background: white;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.BannerTop p{
+    display: inline-flex;
+    color: black;
+    font-size: 40px;
+    margin: 0;
+}

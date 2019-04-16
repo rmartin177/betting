@@ -1,0 +1,32 @@
+/*
+ * TipsterStats css File
+*/
+
+.TipsterStats {
+    /* propertys here */
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+.statsTable{
+    border: none;
+    border-collapse: collapse;
+}
+
+.statsTable tr{
+
+}
+
+.statsTable tr td{
+    padding: 10px;
+    border: 1px solid black;
+    font-size: 13;
+}
+
+.statsTable tr th{
+    padding: 10px;
+    border: 1px solid black;
+    color: blue;
+    font-size: 13px;
+    font-weight: bold;
+}

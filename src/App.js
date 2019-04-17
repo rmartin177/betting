@@ -4,6 +4,7 @@ import './App.css';
 import BannerTop from "./components/BannerTop/BannerTop"
 import TipsterStats from "./components/TipsterStats/TipsterStats"
 import FormPick from "./components/FormPick/FormPick"
+import OddsCalculator from "./components/OddsCalculator/OddsCalculator"
 
 class App extends Component {
   render() {
@@ -16,6 +17,7 @@ class App extends Component {
         <BannerTop />
          <TipsterStats />
          <FormPick />
+         <OddsCalculator />
         </body>
       </div>
     );

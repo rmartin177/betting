@@ -1,0 +1,8 @@
+/*
+ * OddsCalculator css File
+*/
+
+.OddsCalculator {
+    display: flex;
+    flex-direction: column;
+}

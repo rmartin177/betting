@@ -22,6 +22,7 @@ class TipsterStats extends Component {
     return (
       <div className="TipsterStats">
         <table className="statsTable">
+        <tbody>
         <tr>
         <th>Tipster</th>
         <th>Yield</th>
@@ -52,6 +53,7 @@ class TipsterStats extends Component {
           <td></td>
           <td></td>
         </tr>
+        </tbody>
         </table>
       </div>
     );

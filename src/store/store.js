@@ -6,14 +6,20 @@ const reducer = (state, action) => {
     switch(action.type){
         case SAVE_OPERATION:
         return saveOperation(state, action);
-        case CALCULATE: calculate(state, action);
+        case CALCULATE:
+        return calculate(state, action);
         default: return state;
     }
 }
 
 const initialState = {
-    operation = [],
-    result = 0
+    operation : [],
+    probability : {
+        adjust: {
+            n1 : 0,
+            n2 : 0
+        }
+    }
 }
 
 export default createStore(reducer, initialState);

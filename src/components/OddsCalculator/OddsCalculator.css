@@ -4,5 +4,29 @@
 
 .OddsCalculator {
     display: flex;
+    
+}
+
+.basicProps{
+    margin: 30px 5px 10px 30px;
+    display: flex;
+}
+
+.probability{
+    display: flex;
     flex-direction: column;
+    width: 30%;
+    padding-right: 15px;
+}
+
+.odds{
+  
+    display: flex;
+    flex-direction: column;
+}
+
+.OddsCalculator p {
+    font-size: 13px;
+    padding: 3px;
+    margin: 0;
 }

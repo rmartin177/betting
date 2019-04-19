@@ -5,5 +5,10 @@ export const saveOperation = (state, action) => ({
 
 export const calculate = (state, action) => ({
     ...state, 
-    result: action.result
+    probability: {
+        adjust: {
+            n1 : action.prob[0],
+            n2 : action.prob[1]
+        }
+}
 })

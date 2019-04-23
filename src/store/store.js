@@ -18,6 +18,10 @@ const initialState = {
         adjust: {
             n1 : 0,
             n2 : 0
+        },
+        expected: {
+            n1 : 0,
+            n2 : 0
         }
     }
 }

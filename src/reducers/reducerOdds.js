@@ -9,6 +9,10 @@ export const calculate = (state, action) => ({
         adjust: {
             n1 : action.prob[0],
             n2 : action.prob[1]
+        },
+        expected: {
+            n1 : action.prob[2],
+            n2 : action.prob[3]
         }
 }
 })

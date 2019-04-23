@@ -23,7 +23,6 @@ class OddsCalculator extends Component {
 
 
   render() {
-    console.log("aqui llega")
     return (
       <div className="OddsCalculator">
       <div className="basicProps">
@@ -37,14 +36,16 @@ class OddsCalculator extends Component {
         </div>
         </div>
       <div className="yieldCalculate">
-      <p>Yield expected: {this.props.yieldExpected}</p>
+      <div className="textYieldCalculate">
+      <p>Yield expected {this.props.yieldExpected}</p>
         <input type="number" placeholder="yield esperado" id="yieldExpected"/>
+      </div>
         <div className="yieldResult">
-        <p>odd atyield : </p>
-        <p>odd at  yield : </p>
+        <p>odd at yield : {this.props.probability.expected.n1}</p>
+        <p>odd at yield : {this.props.probability.expected.n2}</p>
          </div>
          </div>
-        <button onClick = {() => calculador(this.props)} >calcular</button>
+        <button className="btn" onClick = {() => calculador(this.props)} >calcular</button>
       </div>
     );
   }
@@ -53,15 +54,19 @@ class OddsCalculator extends Component {
 const calculador = props => {
   let n1 = document.getElementById("number1");
   let n2 = document.getElementById("number2");
-  let result1S = (Math.round(1/Number(n1.value)*100)).toFixed(2);
+  let n3 = document.getElementById("yieldExpected");
+  let result1S = (1/Number(n1.value)*100).toFixed(2);
   let result2S = (1/Number(n2.value)*100).toFixed(2);
   let result1 = parseFloat(result1S);
   let result2 = parseFloat(result2S);
+  let result3 = parseFloat((1/Number(n1.value)*(100+Number(n3.value))).toFixed(2));
+  let result4 = parseFloat((1/Number(n2.value)*(100+Number(n3.value))).toFixed(2));
   let obj = [
      result1,
-    result2
+    result2,
+    result3,
+    result4
   ]
-
   props.calculateOperation(obj)
 }
 

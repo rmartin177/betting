@@ -45,7 +45,7 @@ class OddsCalculator extends Component {
         <p>odd at yield : {this.props.probability.expected.n2}</p>
          </div>
          </div>
-        <button className="btn" onClick = {() => calculador(this.props)} >calcular</button>
+        <button className="btnn" onClick = {() => calculador(this.props)} >calcular</button>
       </div>
     );
   }

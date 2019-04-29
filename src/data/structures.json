@@ -1,0 +1,20 @@
+{
+    "pick": {
+        "tipster": "",
+        "tournament": "",
+        "event": "",
+        "category": "",
+        "market": "",
+        "forecast": "",
+        "stake": 1,
+        "odds": 1,
+        "profit": 0,
+        "date": null
+    },
+    "tipster": {
+        "name": "",
+        "yield": 0,
+        "profit": 0,
+        "n_picks": 0
+    }
+}

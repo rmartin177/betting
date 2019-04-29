@@ -1,0 +1,26 @@
+/*
+ * ListPicks css File
+*/
+
+.pickStats {
+    /* propertys here */
+}
+
+.tableStats{
+    margin: 15px;
+    border-collapse: collapse;
+}
+
+.tableStats th{
+    border: 1px solid black;
+    font-size: 13px;
+    font-weight: bold;
+    color: blue;
+    padding: 10px 15px;
+}
+
+.tableStats td{
+    border: 1px solid black;
+    font-size: 13px;
+    padding: 10px 15px;
+}
